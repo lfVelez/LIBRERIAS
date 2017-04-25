@@ -12,7 +12,7 @@ Improved by Justin MASSIOT
   1. Check the "copy to clipboard" checkbox if you want to directly paste the result somewhere.
   1. Press enter or click the small 'Convert' button.
 
-<img src='http://altium-designer-addons.googlecode.com/svn/trunk/mil-mm-conv/mil-mm-conv.png' align='middle'>
+<img src='https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/mil-mm-conv/mil-mm-conv.png' align='middle'>
 
 <br />
 
@@ -32,7 +32,7 @@ And more with version 2.0:<br>
 
 <h1>Download it</h1>
 
-<b><a href='https://drive.google.com/file/d/0B71DP3351mA0Vzd2WExhTjlseUk/edit?usp=sharing'>Download the converter script</a></b>
+<b><a href='https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/mil-mm-conv'>Download the latest version of the converter</a></b>
 
 <br />
 
