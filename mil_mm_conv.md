@@ -23,7 +23,7 @@ Improved by Justin MASSIOT
 * The 'inch' unit is supported.
 * The result can be automatically copied to the Windows clipboard, in order to paste it wherever you want.
 * The input value is shown with a foreground color, and the copied value with a background color.
-* The converter is fully customizable for your own needs, see [the dedicated section](https://github.com/Altium-Designer-addons/scripts-libraries/blob/wiki/mil_mm_conv.md#customizing-the-converter).
+* The converter is fully customizable for your own needs, see [the dedicated section](#customizing-the-converter).
 
 ## Download it
 
