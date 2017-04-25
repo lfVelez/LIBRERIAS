@@ -40,7 +40,8 @@ Inside the file mil-mm-conv.pas you will find a series of constants that you can
 * inputcolor: define the font color of the value which is the input
 * copycolor: define the background color of the result which has been copied to the clipboard; default is clSkyBlue, other proposals are clActiveCaption, clHighlight
 
-```const
+```delphi
+const
     floatformat = '0.####'; // configuration: define the format of the decimal results; default is '0.####' (round to the fourth decimal, no trailing zeros but with a leading zero before the separator), leave this empty if you do not want to round the results
     copybydefault = true; // configuration: choose to copy the result to clipboard by default at startup; default is 'true' = copy by default
     copymetric = 'mm'; // configuration: choose the result to copy to clipboard after a conversion from imperial to metric; could be 'mm' or 'um', default is 'mm'
