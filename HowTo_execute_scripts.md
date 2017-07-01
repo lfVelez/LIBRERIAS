@@ -31,7 +31,7 @@ The list is actually a tree of this form:
 
 Choose either a script file or a particular function and click "OK" to run it.
 
-_Some functions of your scripts are missing in the list, whereas the script itself is visible? Do your functions require some input parameters? Well, the "Run script" dialog is not able to let you start this type of functions because you cannot input anything from there, sorry._
+_The script itself is visible but some functions are missing in the list ? Do these functions require some input parameters? Well, the "Run script" dialog is not able to let you start this type of functions because you cannot input anything from there, sorry._
 
 
 # Solution 2: New menu item #
