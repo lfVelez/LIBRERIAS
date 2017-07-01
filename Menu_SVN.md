@@ -15,11 +15,11 @@ Below is the list of functions and associated shortcuts present in the menu.
 |Lock|CTRL + ALT + K|
 |Unlock|CTRL + ALT + N|
 |Refresh|CTRL + ALT + R|
-|TSVN Commit folder|CTRL + ALT + PgUp|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the pre-requisites below|
-|TSVN Update folder|CTRL + ALT + PgDn|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the pre-requisites below|
+|TSVN Commit folder|CTRL + ALT + PgUp|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
+|TSVN Update folder|CTRL + ALT + PgDn|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
 |Commit whole project|CTRL + ALT + M|
 |Update whole project|CTRL + ALT + U|
-|Revert local modifications|CTRL + ALT + V|Not valid with Output Job files ; Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the pre-requisites below|
+|Revert local modifications|CTRL + ALT + V|Not valid with Output Job files ; Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the prerequisites below|
 |Add to version control|CTRL + ALT + I (I like "Insert")|Not valid with Output Job files|
 |Remove from version control|CTRL + ALT + D|
 
@@ -29,11 +29,13 @@ Below is the list of functions and associated shortcuts present in the menu.
 
 
 # Create the menu
-## Prerequisites
-To be written
+## Prerequisites (if import of the preferences)
+To be written  
 -> paths  
--> icons  
--> TortoiseSVN
+C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN  
+C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN  
+C:\AltiumDesigner_AddOns\Scripts\BetterRevertVCS  
+-> TortoiseSVN installation
 
 ## import
 -> file!
@@ -49,12 +51,9 @@ All menus in Altium Designer are "contextual", i.e. depend on the file being edi
 
 To have the functions usable more widely you need to create a new menu manually in each new context.
 
-## create manually
--> appendix
 
 
-
-# Appendix: SVN menu configuration
+# Appendix: Manual creation of your own menu
 Instead of importing a configuration file you can do it the hard way by re-creating the menu yourself. Use "DXP > Customize" or right-click on any menu item and choose "Customize". Use the information below to fill in the menu creation forms.  
 To have the icons shown correctly you need to follow the instructions from the section "prerequisites" above.
 
