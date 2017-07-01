@@ -15,11 +15,11 @@ Below is the list of functions and associated shortcuts present in the menu.
 |Lock|CTRL + ALT + K|
 |Unlock|CTRL + ALT + N|
 |Refresh|CTRL + ALT + R|
-|TSVN Commit folder|CTRL + ALT + PgUp|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
-|TSVN Update folder|CTRL + ALT + PgDn|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
+|TSVN Commit folder|CTRL + ALT + PgUp|Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
+|TSVN Update folder|CTRL + ALT + PgDn|Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
 |Commit whole project|CTRL + ALT + M|
 |Update whole project|CTRL + ALT + U|
-|Revert local modifications|CTRL + ALT + V|Not valid with Output Job files ; Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the prerequisites below|
+|Revert local modifications|CTRL + ALT + V|Not valid with Output Job files ; Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the prerequisites below|
 |Add to version control|CTRL + ALT + I (I like "Insert")|Not valid with Output Job files|
 |Remove from version control|CTRL + ALT + D|
 
