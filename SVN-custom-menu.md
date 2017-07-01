@@ -1,22 +1,27 @@
+Note: Altium Designer is natively compatible with SVN and CVS. My add-ons are only compatible with SVN only because of the use of custom scripts that are developed specifically for SVN. Apart of those ones, everything should be CVS compatible.
+
 # A menu for SVN actions
-I created a menu with keyboard shortcuts for built-in SVN operations and call to my custom SVN scripts.
+I created a menu with keyboard shortcuts for built-in SVN operations and call to my custom SVN scripts. If you read on, you will be able to create the same menu to use it in your environment.
 
 ![custom SVN menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/TortoiseSVN/Menu_SVN.png)
 
-Here is the list of custom shortcuts which I added to Altium Designer:
+An important thing to understand is that each feature can work **only if** you have the **focus** on a document that is able to interact. For example the function "Lock" will only work if it is applied when you are currently working (under focus in Altium Designer) on a file that is under version control.  
+Menu items that are greyed out mean they cannot apply on that file. Example: cannot Unlock because the file is not locked, cannot Add because the file is already under version control.
 
-|Feature|Shortcut|Special instructions|
+Below is the list of functions and associated shortcuts present in the menu.
+
+|Feature|Keyboard shortcut|Special instructions|
 |:---|:---|:---|
 |Lock|CTRL + ALT + K|
 |Unlock|CTRL + ALT + N|
 |Refresh|CTRL + ALT + R|
-|TSVN Commit folder (using TortoiseSVN)|CTRL + ALT + PgUp|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the pre-requisites below|
-|TSVN Update folder (using TortoiseSVN)|CTRL + ALT + PgDn|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the pre-requisites below|
+|TSVN Commit folder|CTRL + ALT + PgUp|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the pre-requisites below|
+|TSVN Update folder|CTRL + ALT + PgDn|Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the pre-requisites below|
 |Commit whole project|CTRL + ALT + M|
 |Update whole project|CTRL + ALT + U|
 |Revert local modifications|CTRL + ALT + V|Not valid with Output Job files ; Needs a [custom script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the pre-requisites below|
-|Add to version control (Insert)|CTRL + ALT + I|Not valid with Output Job files|
-|Remove from version control (Delete)|CTRL + ALT + D|
+|Add to version control|CTRL + ALT + I (I like "Insert")|Not valid with Output Job files|
+|Remove from version control|CTRL + ALT + D|
 
 **Warning 1**: The functions « Commit whole project » and « Update whole project » apply to the currently active project. If the currently open document is not inside a project, the functions cannot be used.  
 **Warning 2**: The functions « TSVN Commit folder » and « TSVN Update folder » apply to the whole content of the directory containing the current file or project. If the current file has never been saved on the disk, the functions cannot be used. Those two functions also need TortoiseSVN to be installed on the computer.
@@ -32,7 +37,9 @@ All menus in Altium Designer are "contextual", i.e. depend on the file being edi
 - Output Jobs (for example with a *.OutJob file)
 ## Pre-requisites
 To be written
--> paths
+-> paths  
+-> icons  
+-> TortoiseSVN
 ## import
 -> file!
 ## create manually
@@ -41,6 +48,8 @@ To be written
 
 
 # Appendix: SVN menu configuration
+Instead of importing a configuration file, you can re-create the menu yourself.  
+To have the icons shown correctly you need to follow the instructions from the section "prerequisites" above.
 
 SV&N  
 N
