@@ -5,7 +5,7 @@ I created a menu with keyboard shortcuts for built-in SVN operations and call to
 
 ![custom SVN menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/TortoiseSVN/Menu_SVN.png)
 
-An important thing to understand is that each feature can work **only if** you have the **focus** on a document that is able to interact. For example the function "Lock" will only work if it is applied when you are currently working (under focus in Altium Designer) on a file that is under version control.  
+An important thing to understand is that each function can work **only if** you have the **focus** on a document that is able to interact. For example the function "Lock" will only work if it is applied when you are currently working (under focus in Altium Designer) on a file that is under version control.  
 Menu items that are greyed out mean they cannot apply on that file. Example: cannot Unlock because the file is not locked, cannot Add because the file is already under version control.
 
 Below is the list of functions and associated shortcuts present in the menu.
@@ -29,19 +29,24 @@ Below is the list of functions and associated shortcuts present in the menu.
 
 
 # Create the menu
-All menus in Altium Designer are "contextual", i.e. depend on the file being edited. For this reason, the menu and  shortcuts are available in the following contexts:
-- Schematics editor (for example with a *.SchDoc file)
-- PCB editor (for example with a *.PcbDoc)
-- Symbol library editor (for example with a *.SchLib file)
-- Footprint library editor (for example with a *.PcbLib file)
-- Output Jobs (for example with a *.OutJob file)
 ## Prerequisites
 To be written
 -> paths  
 -> icons  
 -> TortoiseSVN
+
 ## import
 -> file!
+
+All menus in Altium Designer are "contextual", i.e. depend on the file being edited. For this reason, the proposed menu and shortcuts are only available in the following contexts:
+- Schematics editor (for example with a *.SchDoc file)
+- PCB editor (for example with a *.PcbDoc)
+- Symbol library editor (for example with a *.SchLib file)
+- Footprint library editor (for example with a *.PcbLib file)
+- Output Jobs (for example with a *.OutJob file)
+
+To have the functions usable more widely you need to create a new menu manually in each new context.
+
 ## create manually
 -> appendix
 
