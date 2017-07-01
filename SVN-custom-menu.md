@@ -35,7 +35,7 @@ All menus in Altium Designer are "contextual", i.e. depend on the file being edi
 - Symbol library editor (for example with a *.SchLib file)
 - Footprint library editor (for example with a *.PcbLib file)
 - Output Jobs (for example with a *.OutJob file)
-## Pre-requisites
+## Prerequisites
 To be written
 -> paths  
 -> icons  
@@ -48,8 +48,10 @@ To be written
 
 
 # Appendix: SVN menu configuration
-Instead of importing a configuration file, you can re-create the menu yourself.  
+Instead of importing a configuration file you can do it the hard way by re-creating the menu yourself. Use "DXP > Customize" or right-click on any menu item and choose "Customize". Use the information below to fill in the menu creation forms.  
 To have the icons shown correctly you need to follow the instructions from the section "prerequisites" above.
+
+Do not forget that you probably need to create the same menu many times if you want it to be accessible in several contexts (e.g. Schematic editor, PCB editor, SCH library editor, etc.). If you do not have specific needs you are encouraged to import the preference file.
 
 SV&N  
 N
