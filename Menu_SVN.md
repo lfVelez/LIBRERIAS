@@ -3,7 +3,7 @@ Note: Altium Designer is natively compatible with SVN and CVS. My add-ons are on
 # A menu for SVN actions
 I created a menu with keyboard shortcuts for built-in SVN operations and call to my custom SVN scripts. If you read on, you will be able to create the same menu to use it in your environment.
 
-![custom SVN menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/TortoiseSVN/Menu_SVN.png)
+![custom SVN menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/Menu_SVN.png)
 
 An important thing to understand is that each function can work **only if** you have the **focus** on a document that is able to interact. For example the function "Lock" will only work if it is applied when you are currently working (under focus in Altium Designer) on a file that is under version control.  
 Menu items that are greyed out mean they cannot apply on that file. Example: cannot Unlock because the file is not locked, cannot Add because the file is already under version control.
@@ -37,6 +37,8 @@ To be written
 
 ## import
 -> file!
+
+![how to import a custom menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/Load_Custom_Menus_Altium.png)
 
 All menus in Altium Designer are "contextual", i.e. depend on the file being edited. For this reason, the proposed menu and shortcuts are only available in the following contexts:
 - Schematics editor (for example with a *.SchDoc file)
