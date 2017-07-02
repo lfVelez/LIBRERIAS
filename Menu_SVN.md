@@ -5,26 +5,26 @@ I created a menu with keyboard shortcuts for built-in SVN operations and call to
 
 ![custom SVN menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/Menu_SVN.png)
 
-An important thing to understand is that each function can work **only if** you have the **focus** on a document that is able to interact. For example the function "Lock" will only work if it is applied when you are currently working (under focus in Altium Designer) on a file that is under version control.  
-Menu items that are greyed out mean they cannot apply on that file. Example: cannot Unlock because the file is not locked, cannot Add because the file is already under version control.
+An important thing to understand is that each function can work **only if** you have the **focus** on a document that is able to interact. For example the function "Lock" will only work if it is applied when you are currently working ("focused" in Altium Designer) on a file that is under version control.  
+Menu items that are greyed out mean the function cannot apply on that file. Examples: cannot Unlock because the file is not locked, cannot Add because the file is already under version control.
 
 Below is the list of functions and associated shortcuts present in the menu.
 
-|Feature|Keyboard shortcut|Special instructions|
+|Action|Keyboard shortcut|Special instructions|
 |:---|:---|:---|
 |Lock|CTRL + ALT + K|
 |Unlock|CTRL + ALT + N|
 |Refresh|CTRL + ALT + R|
-|TSVN Commit folder|CTRL + ALT + PgUp|Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
-|TSVN Update folder|CTRL + ALT + PgDn|Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN) + TortoiseSVN, see the prerequisites below|
+|TSVN Commit folder|CTRL + ALT + PgUp|Needs TortoiseSVN + [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN), see the prerequisites below|
+|TSVN Update folder|CTRL + ALT + PgDn|Needs TortoiseSVN + [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN), see the prerequisites below|
 |Commit whole project|CTRL + ALT + M|
 |Update whole project|CTRL + ALT + U|
-|Revert local modifications|CTRL + ALT + V|Not valid with Output Job files ; Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the prerequisites below|
-|Add to version control|CTRL + ALT + I (I like "Insert")|Not valid with Output Job files|
+|Revert local modifications|CTRL + ALT + V|Needs [this script](https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS), see the prerequisites below ; *Shortcut not valid with Output Job files*|
+|Add to version control|CTRL + ALT + I (like "Insert")|*Shortcut not valid with Output Job files*|
 |Remove from version control|CTRL + ALT + D|
 
-**Warning 1**: The functions « Commit whole project » and « Update whole project » apply to the currently active project. If the currently open document is not inside a project, the functions cannot be used.  
-**Warning 2**: The functions « TSVN Commit folder » and « TSVN Update folder » apply to the whole content of the directory containing the current file or project. If the current file has never been saved on the disk, the functions cannot be used. Those two functions also need TortoiseSVN to be installed on the computer.
+**Warning 1**: The functions « Commit whole project » and « Update whole project » are built-in features of Altium Designer and apply to the currently active project. If the currently open document is not inside a project, the functions cannot be used.  
+**Warning 2**: The functions « TSVN Commit folder » and « TSVN Update folder » are add-ons and apply to the whole content of the directory containing the current file or project. If the current file has never been saved on the disk, the functions cannot be used.
 
 
 
@@ -55,7 +55,7 @@ You should now have the following folder structure:
 Now that everything is ready:
 1. [Download the pre-made preference file](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/DefaultPreferences_with_SVN_menu.DXPPrf) wherever you want on your drive.
 1. Open Altium Designer and click DXP > Preferences.
-1. Use the bottom button "Import" to select the previously downloaded preference file.
+1. Use the bottom button "Load" to select the previously downloaded preference file.
 1. Deselect all options but "System > Customizations" like in the screen capture below and click OK.
 1. Restart Altium Designer and open a Schematics or PCB file to see the new menu.
 
