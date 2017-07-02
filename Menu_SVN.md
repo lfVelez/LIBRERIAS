@@ -38,21 +38,22 @@ Before the creation of the menu you need to follow those instructions:
 1. Download the content of https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN and put it into the directory "C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN"
 1. Install [TortoiseSVN](https://tortoisesvn.net) (free and open source) to get the full potential of the TortoiseSVN script and menu
 
-You now should have the following folder structure:  
-C:\AltiumDesigner_AddOns\
-> MenuIcons
->> [icon files]
+You should now have the following folder structure:  
+> C:\AltiumDesigner_AddOns\
 
-> Scripts
->> BetterRevertVCS
->>> [script files]
+>> MenuIcons
+>>> [icon files]
 
->> TortoiseSVN
->>> [script files]
+>> Scripts
+>>> BetterRevertVCS
+>>>> [script files]
+
+>>> TortoiseSVN
+>>>> [script files]
 
 ## Import the menu
 Now that everything is ready:
-1. [download the pre-made preference file](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/DefaultPreferences_with_SVN_menu.DXPPrf) wherever you want on your drive.
+1. [Download the pre-made preference file](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/DefaultPreferences_with_SVN_menu.DXPPrf) wherever you want on your drive.
 1. Open Altium Designer and click DXP > Preferences.
 1. Use the bottom button "Import" to select the previously downloaded preference file.
 1. Deselect all options but "System > Customizations" like in the screen capture below and click OK.
