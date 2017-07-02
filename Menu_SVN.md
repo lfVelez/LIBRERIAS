@@ -1,4 +1,4 @@
-Note: Altium Designer is natively compatible with SVN and CVS. My add-ons are only compatible with SVN only because of the use of custom scripts that are developed specifically for SVN. Apart of those ones, everything should be CVS compatible.
+Note: Altium Designer is natively compatible with SVN and CVS. My add-ons are compatible with SVN only because of the use of custom scripts that are developed specifically for SVN. Apart of those ones, everything should be CVS compatible.
 
 # A menu for SVN actions
 I created a menu with keyboard shortcuts for built-in SVN operations and call to my custom SVN scripts. If you read on, you will be able to create the same menu to use it in your environment.
@@ -29,13 +29,26 @@ Below is the list of functions and associated shortcuts present in the menu.
 
 
 # Create the menu
-## Prerequisites (if import of the preferences)
-To be written  
--> paths  
-C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN  
-C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN  
-C:\AltiumDesigner_AddOns\Scripts\BetterRevertVCS  
--> TortoiseSVN installation
+## Prerequisites
+Before the creation of the menu you need to follow those instructions:
+1. Create a folder named exactly "AltiumDesigner_AddOns" on your root drive C:\
+1. Create two other folders into "C:\AltiumDesigner_AddOns\": "MenuIcons" and "Scripts"
+1. Download the content of https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/Menu_SVN/Icons and put it into the directory "C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN"
+1. Download the content of https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/BetterRevertVCS and put it into the directory "C:\AltiumDesigner_AddOns\Scripts\BetterRevertVCS"
+1. Download the content of https://github.com/Altium-Designer-addons/scripts-libraries/tree/master/TortoiseSVN and put it into the directory "C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN"
+1. Install [TortoiseSVN](https://tortoisesvn.net) (free and open source) to get the full potential of the TortoiseSVN script and menu
+
+You now should have the following folder structure:  
+C:\AltiumDesigner_AddOns\
+> MenuIcons
+>> [icon files]
+
+> Scripts
+>> BetterRevertVCS
+>>> [script files]
+
+>> TortoiseSVN
+>>> [script files]
 
 ## import
 -> file!
@@ -57,79 +70,6 @@ To have the functions usable more widely you need to create a new menu manually 
 Instead of importing a configuration file you can do it the hard way by re-creating the menu yourself. Use "DXP > Customize" or right-click on any menu item and choose "Customize". Use the information below to fill in the menu creation forms.  
 To have the icons shown correctly you need to follow the instructions from the section "prerequisites" above.
 
+[Read the instructions](https://github.com/Altium-Designer-addons/scripts-libraries/blob/master/Menu_SVN/AltiumDesigner_SVN_menu_configuration.txt)
+
 Do not forget that you probably need to create the same menu many times if you want it to be accessible in several contexts (e.g. Schematic editor, PCB editor, SCH library editor, etc.). If you do not have specific needs you are encouraged to import the preference file.
-
-SV&N  
-N
-
-> VersionControl:VersionControl  
-ObjectKind=FocusedDocument|Action=Lock  
-Loc&k  
-Lock active document  
-C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Lock.bmp  
-Alt + Ctrl + K  
-
-> VersionControl:VersionControl  
-ObjectKind=FocusedDocument|Action=Unlock  
-U&nlock  
-Unlock active document  
-C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Unlock.bmp  
-Alt + Ctrl + N  
-
-> VersionControl:VersionControl  
-ObjectKind=FocusedProject|Action=RefreshProject  
-&Refresh  
-Refresh status from version control repository  
-C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Refresh.bmp  
-Alt + Ctrl + R  
-
-> ScriptingSystem:RunScript  
-ProjectName=C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN\TortoiseSVN.PrjScr|ProcName=C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN\TortoiseSVN.vbs>TSVN_CommitFolder  
-TSVN &Commit folder  
-Commit the whole folder with TortoiseSVN  
-C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\TSVN_Commit.bmp  
-Alt + Ctrl + PgUp  
-
-> ScriptingSystem:RunScript  
-ProjectName=C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN\TortoiseSVN.PrjScr|ProcName=C:\AltiumDesigner_AddOns\Scripts\TortoiseSVN\TortoiseSVN.vbs>TSVN_UpdateFolder  
-TSVN &Update folder  
-Update the whole folder with TortoiseSVN  
-C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\TSVN_Update.bmp  
-Alt + Ctrl + PgDn  
-
-> &Advanced functions
-
->> VersionControl:VersionControl  
-  ObjectKind=FocusedProject|Action=CommitProject  
-  Co&mmit whole project  
-  Commit project documents to version control  
-  C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Commit.bmp  
-  Alt + Ctrl + M  
-  
->>  VersionControl:VersionControl  
-  ObjectKind=FocusedProject|Action=UpdateProject  
-  &Update whole project  
-  Update project documents from version control  
-  C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Update.bmp  
-  Alt + Ctrl + U  
-  
->>  ScriptingSystem:RunScript  
-  ProjectName=C:\AltiumDesigner_AddOns\Scripts\BetterRevertVCS\BetterRevertVCS.PrjScr|ProcName=C:\AltiumDesigner_AddOns\Scripts\BetterRevertVCS\BetterRevertVCS.vbs>BetterRevertVCS  
-  Re&vert local modifications  
-  Revert local modifications to focused document  
-  C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Revert.bmp  
-  Alt + Ctrl + V  
-  
->>  VersionControl:VersionControl  
-  ObjectKind=FocusedDocument|Action=Add  
-  &Add to version control  
-  Add focused document to version control  
-  C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Add.bmp  
-  Alt + Ctrl + I  
-
->>  VersionControl:VersionControl  
-  ObjectKind=FocusedDocument|Action=Remove  
-  &Remove from version control  
-  Remove focused document from version control  
-  C:\AltiumDesigner_AddOns\MenuIcons\Menu_SVN\Delete.bmp  
-  Alt + Ctrl + D  
