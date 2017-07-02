@@ -50,11 +50,17 @@ C:\AltiumDesigner_AddOns\
 >> TortoiseSVN
 >>> [script files]
 
-## import
--> file!
+## Import the menu
+Now that everything is ready:
+1. [download the pre-made preference file](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/DefaultPreferences_with_SVN_menu.DXPPrf) wherever you want on your drive.
+1. Open Altium Designer and click DXP > Preferences.
+1. Use the bottom button "Import" to select the previously downloaded preference file.
+1. Deselect all options but "System > Customizations" like in the screen capture below and click OK.
+1. Restart Altium Designer and open a Schematics or PCB file to see the new menu.
 
 ![how to import a custom menu](https://github.com/Altium-Designer-addons/scripts-libraries/raw/master/Menu_SVN/Load_Custom_Menus_Altium.png)
 
+## Before use
 All menus in Altium Designer are "contextual", i.e. depend on the file being edited. For this reason, the proposed menu and shortcuts are only available in the following contexts:
 - Schematics editor (for example with a *.SchDoc file)
 - PCB editor (for example with a *.PcbDoc)
