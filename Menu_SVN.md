@@ -42,7 +42,8 @@ You should now have the following folder structure:
 > C:\AltiumDesigner_AddOns\
 
 >> MenuIcons
->>> [icon files]
+>>> Menu_SVN
+>>>> [icon files]
 
 >> Scripts
 >>> BetterRevertVCS
