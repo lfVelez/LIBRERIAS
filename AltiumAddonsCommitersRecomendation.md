@@ -1,3 +1,7 @@
+# This page is **obsolete** and needs some serious updates. Don't take the below information as current.
+<br><br><br>
+***
+<br><br><br>
 # How to commit your script and make life for other committers easy #
 
   * Please commit only YOUR OWN work or work which you are 100% SURE THE AUTHOR APPROVED to be shared by Altium Addons page.
